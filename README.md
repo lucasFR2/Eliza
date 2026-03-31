@@ -32,8 +32,8 @@ eliza/
 
 ```bash
 # Dependências básicas (Fases 1 e 2 não precisam de instalação extra)
-pip install gensim                          # Fase 3: Word2Vec
-pip install transformers torch              # Fase 4: GPT-2 e BERT
+python -m pip install gensim                          # Fase 3: Word2Vec
+python -m pip install transformers torch              # Fase 4: GPT-2 e BERT
 ```
 
 ### Executando cada fase
