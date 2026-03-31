@@ -1,5 +1,5 @@
-# Da ELIZA aos Transformers 🤖
-### A Evolução do Processamento de Linguagem Natural em 15 Dias
+# Da ELIZA aos Transformers 
+### A Evolução do Processamento de Linguagem Natural
 
 ---
 
@@ -12,12 +12,11 @@ Este repositório documenta a jornada de aprendizado sobre a evolução do PLN (
 ## 🗂️ Estrutura do Repositório
 
 ```
-nlp-eliza-to-transformers/
+eliza/
 │
 ├── fase1_eliza.py          # Era Simbólica: Chatbot com Regex
 ├── fase2_ngramas.py        # Revolução Estatística: N-Grams
-├── fase3_embeddings.py     # Vetores e Contexto: Word2Vec
-├── fase4_transformers.py   # Lógica Transformer: GPT-2 e BERT
+├── fase3_transformers.py   # Lógica Transformer: GPT-2 e BERT
 └── README.md
 ```
 
@@ -42,17 +41,16 @@ pip install transformers torch              # Fase 4: GPT-2 e BERT
 ```bash
 python fase1_eliza.py        # Inicia o chatbot ELIZA no terminal
 python fase2_ngramas.py      # Treina e demonstra o gerador N-Grams
-python fase3_embeddings.py   # Treina Word2Vec e exibe similaridades
-python fase4_transformers.py # Demonstra GPT-2, BERT e Self-Attention
+python fase3_transformers.py # Demonstra GPT-2, BERT e Self-Attention
 ```
 
-> ⚠️ **Fase 4:** Na primeira execução, os modelos GPT-2 e BERT serão baixados automaticamente (~500MB).
+> ⚠️ **Fase 3:** Na primeira execução, os modelos GPT-2 e BERT serão baixados automaticamente (~500MB).
 
 ---
 
-## 📖 As 4 Fases do Aprendizado
+## 📖 As 3 Fases do Aprendizado
 
-### Fase 1 — Era Simbólica: ELIZA (Dias 1–3)
+### Fase 1 — Era Simbólica: ELIZA 
 **Arquivo:** `fase1_eliza.py`
 
 Reimplementação do chatbot ELIZA (Weizenbaum, 1966). O sistema usa **Expressões Regulares (Regex)** para identificar padrões na entrada do usuário e retornar respostas pré-programadas.
@@ -66,7 +64,7 @@ Reimplementação do chatbot ELIZA (Weizenbaum, 1966). O sistema usa **Expressõ
 
 ---
 
-### Fase 2 — Revolução Estatística: N-Grams (Dias 4–7)
+### Fase 2 — Revolução Estatística: N-Grams
 **Arquivo:** `fase2_ngramas.py`
 
 Abandona as regras fixas e adota **probabilidade baseada em frequência**. O modelo aprende bigramas e trigramas a partir de um corpus e gera texto prevendo a próxima palavra.
@@ -85,24 +83,8 @@ Abandona as regras fixas e adota **probabilidade baseada em frequência**. O mod
 
 ---
 
-### Fase 3 — Vetores e Contexto: Word Embeddings (Dias 8–11)
-**Arquivo:** `fase3_embeddings.py`
-
-Transforma palavras em **vetores numéricos** usando Word2Vec (Gensim). Palavras com significados próximos ficam próximas no espaço vetorial.
-
-**Conceitos:** Word2Vec, Espaço Vetorial, Similaridade de Cosseno, Embeddings Estáticos
-
-**Operação Vetorial Clássica:**
-```
-Rei − Homem + Mulher ≈ Rainha
-```
-
-**Limitação explorada:** Vetores estáticos — a palavra "banco" tem um único vetor, independentemente do contexto (financeiro ou mobília).
-
----
-
-### Fase 4 — Lógica Transformer (Dias 12–15)
-**Arquivo:** `fase4_transformers.py`
+### Fase 3 — Lógica Transformer 
+**Arquivo:** `fase3_transformers.py`
 
 Usa a biblioteca **Hugging Face** para explorar modelos Transformer modernos: GPT-2 para geração de texto e BERT para análise de sentimento e preenchimento de máscara.
 
@@ -149,4 +131,3 @@ Com RLHF: assistentes **úteis, seguros e honestos** (ChatGPT, Claude, Gemini).
 
 ---
 
-*"A tecnologia evoluiu, o desafio continua."*
