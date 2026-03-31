@@ -292,7 +292,7 @@ def modo_interativo_gpt2():
 # =============================================================================
 def main():
     print("=" * 60)
-    print("  FASE 4: Transformers e Atenção")
+    print("  FASE 3: Transformers e Atenção")
     print("  A Revolução de 2017 — 'Attention is All You Need'")
     print("=" * 60)
 
